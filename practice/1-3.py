@@ -101,4 +101,15 @@ def fib(n):
         return fib(n-1) + fib(n-2)
 
 fib(10)
-fib(55)
+# fib(55)
+
+# https://www.suzu6.net/posts/54-fibonacci-number/
+def fb(num):
+    """num番目のフィボナッチ数を返す
+    """
+    a, b = 1, 0
+    for _ in range(num):
+        a, b = a + b, a
+    return b
+
+fb(10000)
